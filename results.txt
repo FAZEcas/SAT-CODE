@@ -1,0 +1,47 @@
+SAT Solver Performance Summary
+
+
+Results for input_1.txt
+Algorithm                 Time (s)   Memory     Decisions  Unit Props Result
+DPLL (shortest_clause)    0.0004     0.00       1          2          UNSAT 
+DPLL (random)             0.0005     0.01       1          2          UNSAT 
+DPLL (jeroslow_wang)      0.0006     0.00       1          2          UNSAT 
+DPLL (most_frequent)      0.0016     0.00       3          4          UNSAT 
+Davis-Putnam              0.0112     0.12       0          0          UNSAT 
+Resolution                4.8109     3.21       0          0          UNSAT 
+
+Results for input_2.txt
+Algorithm                 Time (s)   Memory     Decisions  Unit Props Result
+DPLL (shortest_clause)    0.0004     0.00       1          2          UNSAT 
+DPLL (random)             0.0005     0.00       1          2          UNSAT 
+DPLL (jeroslow_wang)      0.0005     0.00       1          2          UNSAT 
+DPLL (most_frequent)      0.0015     0.00       3          4          UNSAT 
+Davis-Putnam              0.0104     0.11       0          0          UNSAT 
+Resolution                4.9830     3.21       0          0          UNSAT 
+
+Results for input_3.txt
+Algorithm                 Time (s)   Memory     Decisions  Unit Props Result
+DPLL (most_frequent)      0.0000     0.00       1          4          SAT   
+DPLL (shortest_clause)    0.0000     0.00       1          4          SAT   
+DPLL (jeroslow_wang)      0.0001     0.00       1          4          SAT   
+Davis-Putnam              0.0001     0.00       0          0          SAT   
+DPLL (random)             0.0001     0.00       1          4          SAT   
+Resolution                38.0783    0.20       0          0          SAT   
+
+Average Performance Comparison
+Algorithm                 Avg Time   Avg Memory Avg Decisions Avg Unit Props
+DPLL (shortest_clause)    0.0003     0.00       1.00         2.67        
+DPLL (random)             0.0004     0.00       1.00         2.67        
+DPLL (jeroslow_wang)      0.0004     0.00       1.00         2.67        
+DPLL (most_frequent)      0.0011     0.00       2.33         4.00        
+Davis-Putnam              0.0072     0.08       0.00         0.00        
+Resolution                15.9574    2.21       0.00         0.00        
+
+Algorithm Performance Across All Inputs
+Algorithm                input_1.txt input_2.txt input_3.txt 
+DPLL (shortest_clause)   0.0004      0.0004      0.0000      
+DPLL (random)            0.0005      0.0005      0.0001      
+DPLL (jeroslow_wang)     0.0006      0.0005      0.0001      
+DPLL (most_frequent)     0.0016      0.0015      0.0000      
+Davis-Putnam             0.0112      0.0104      0.0001      
+Resolution               4.8109      4.9830      38.0783     
